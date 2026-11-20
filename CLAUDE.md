@@ -1,10 +1,7 @@
-# Job Application Assistant for [YOUR_NAME]
-
-<!-- SETUP: This file is populated by running /setup -->
-<!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
+# Job Application Assistant for Purvansh Bhatt
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for [YOUR_NAME], helping with:
+This repo is a job application workspace. Claude acts as a career advisor and application assistant for Purvansh Bhatt, helping with:
 1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
 2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
 3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
@@ -13,79 +10,80 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ## Candidate Profile
 
-<!-- This section is auto-populated by /setup. You can also fill it in manually. -->
+Full structured profile: `.claude/skills/job-application-assistant/01-candidate-profile.md`.
+Items marked ⚠ are unconfirmed (the source resumes disagree) - do not put a ⚠ claim on a CV
+or cover letter until Purvansh confirms it.
 
 ### Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_CITY], [YOUR_COUNTRY] ([YOUR_COMMUTE_CONSTRAINTS])
+- **Name:** Purvansh Bhatt
+- **Location:** Jersey City, NJ, USA. Open to relocation (can move within 2-3 weeks of an offer) to the US, Canada, UK, all of Europe (incl. Netherlands, Germany, Luxembourg), Singapore, Japan, UAE (Dubai), Qatar (Doha), Australia, New Zealand. Remote and hybrid welcome.
+- **Contact:** purvansh95b@gmail.com | +1 917-999-6730 | GitHub: github.com/purvanshbhatt | LinkedIn: (URL not yet recorded) | TryHackMe profile
+- **Work authorization:** US F-1 **STEM OPT, valid through July 2027**. US employer must be E-Verify enrolled; will need H-1B (or other) sponsorship to stay past July 2027. Outside the US: needs an employer-sponsored work visa.
 - **Languages:**
   | Language | Level |
   |----------|-------|
-  | [LANGUAGE] | [LEVEL] |
-  <!-- Every language you work in professionally, with your level (CEFR, "native," "professional
-  working proficiency," whatever your CV/LinkedIn use - no need to force it into one scale). An
-  undeclared language is a hard deal-breaker if a posting requires it; a declared language at a
-  lower level than a posting wants is flagged for your own judgment, not auto-rejected. See
-  04-job-evaluation.md's Language Gate. -->
-- **CV language:** [YOUR_CV_LANGUAGE] <!-- English unless your market expects otherwise; /setup asks -->
-
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **LinkedIn headline:** "[YOUR_LINKEDIN_HEADLINE]"
+  | English | Full professional proficiency (⚠ level assumed from US MS + US work; other languages not yet declared) |
+- **CV language:** English
+- **Status:** Founder & Security Engineer at ResilAI (own startup, Feb 2026-present); actively seeking a full-time security role.
+- **LinkedIn headline (suggested):** "Security Engineer | Detection & Response, Cloud & AI Security | CySA+ | Security+"
 
 ### Education
-<!-- List your degrees, most recent first -->
-- **[DEGREE_LEVEL] in [FIELD]** ([YEAR_START]-[YEAR_END]) - [INSTITUTION]
-  - Thesis: "[THESIS_TITLE]"
-  - Topics: [KEY_TOPICS]
+- **MS in Cybersecurity** (graduated May 2024) - Pace University, Seidenberg School of CSIS, New York, NY. GPA 3.9
+  - Topics: network security, incident response, penetration testing, computer & mobile forensics, cloud security, application security, vulnerability management, risk assessment, ISO frameworks, cryptography, Python automation
+- **BS in Cybersecurity and Information Technology** (graduated May 2022) - Gujarat University, Gujarat, India. GPA 3.8
 
 ### Professional Experience
-<!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+- **Founder & Security Engineer** (Feb 2026 - Present) - **ResilAI**
+  - Built ResilAI (AIRS), an AI incident readiness platform; deterministic pre-inference "Logic Firewall" on GCP Cloud Run blocks 99.2% of 500+ adversarial payloads (MITRE ATLAS AML.T0031)
+  - Adversarial evaluation harness with Garak, Microsoft PyRIT and Promptfoo (prompt injection, jailbreaks, SSRF / IMDSv2)
+- **Cybersecurity Engineer (Detection & Response)** ⚠ (Aug 2024 - Feb 2026) - **Filmy AI**
+  - Cut MTTD/MTTR 30% across 50+ events/incidents via SIEM correlation rules, log analytics, anomaly-detection dashboards
+  - Cut analyst triage workload 40% with Python + SQL automation; cut AWS attack surface 40% (IAM least privilege, WAF, S3 encryption, CloudTrail)
+  - Security awareness training for 20+ employees (phishing risk down 15%)
+- **Cyber Security Intern** (Mar 2024 - May 2024) - **Bunchful** ⚠ (scope of pentest work unconfirmed)
+- **IT Security and Systems Intern** (Dec 2023 - Mar 2024) - **GAOTek**
+- **Digital Forensics & Incident Response Analyst** ⚠ (Feb 2021 - Mar 2023) - **Cod-Ingenuity** (title also appears as "Web Security Specialist")
 
 ### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
+- **Primary:** detection engineering (SIEM correlation rules, log analytics, anomaly detection), incident response & DFIR, AWS cloud security (IAM, WAF, S3, CloudTrail), AI/LLM security testing (Garak, PyRIT, Promptfoo, MITRE ATLAS), Python + SQL security automation
+- **Secondary:** penetration testing & vulnerability assessment (Nmap, Metasploit, Hydra, Hashcat, Wireshark), GRC & quantitative risk (NIST CSF 2.0, ISO 27001:2022, SOC 2, NIST AI RMF, FAIR), CrowdStrike Falcon EDR, Cisco firewalls, GCP Cloud Run, FastAPI
+- **Domain:** MITRE ATT&CK / ATLAS, OWASP Top 10 / LLM Top 10, PCI DSS
+- **Software:** Python, SQL, Bash, PowerShell, C++, JavaScript; Kali, RHEL, Ubuntu, CentOS, Windows Server 2022 / AD; AWS, Azure, GCP; VMware, VirtualBox, GitHub
+- ⚠ **Unconfirmed (on one resume only):** Splunk, FTK, Autopsy, Magnet Axiom, Burp Suite, Jira, Confluence, SAP, Tableau, Looker
 
 ### Certifications
-<!-- List relevant certifications with dates -->
-- **[CERTIFICATION_NAME]** - [HOURS]h - completed [DATE]
+- **CompTIA CySA+**, **CompTIA Security+**, **CompTIA CSAP** (dates not recorded)
+- **OSCP** - in progress
+- TryHackMe top 5% (Level 55); Hack The Box Level 4 Operator
 
 ### Publications
-<!-- List peer-reviewed publications, if any -->
-- [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL].
+- None
 
 ### Awards
-<!-- List relevant awards, hackathons, competitions -->
-- [AWARD_NAME] - [EVENT] ([YEAR])
+- 2024 MITRE Engenuity Embedded CTF (eCTF) - Task Manager & Secure Designer, led a team of 8 (Jan-Apr 2024)
 
 ### Behavioral Profile
-<!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
+*[Inferred from resume summaries - no formal assessment on file]*
+- **Builder / owner** - founded ResilAI; ships open-source security tooling (NextGen Risk Register, patchproof, cloud-forensic-snapshot)
+- **Automation-first** - repeatedly replaces manual triage and testing with Python/SQL tooling
+- **Strengths:** analytical, proactive, translates technical risk for non-technical stakeholders, led an 8-person eCTF team
+- **Growth areas:** not yet recorded
+- **Thrives in:** startup / fast-moving teams with ownership (stated preference: startups)
 
 ### What Excites You
-<!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
+- AI/LLM security, adversarial testing and AI red teaming
+- Building detection and response automation; cloud security engineering
 
 ### Target Sectors
-<!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
+- AI / ML startups: AI security, LLM platforms, AI infrastructure
+- Security product companies: EDR/XDR, SIEM, cloud security, AppSec
+- Fintech / SaaS startups with a growing security function
+- Any company is fine; startups preferred
 
 ### Deal-breakers
-<!-- Hard constraints on job search. Language requirements are handled separately and
-automatically from your Languages table above - don't duplicate them here. -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+- Roles requiring citizenship, permanent residency, or a security clearance (on STEM OPT)
+- US postings that refuse sponsorship "now or in the future" (Purvansh will need H-1B after July 2027)
+- Non-US postings that require an existing right to work and will not sponsor a visa
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)
@@ -145,3 +143,5 @@ ATS parsers read the PDF's embedded text layer, not the rendered page. Extract i
 - [ ] Email and phone appear as **literal text** in the extraction (icon-glyph noise like `MOBILE-ALT`/`Envelope` is harmless, but a contact detail carried only by an icon or hyperlink is invisible to ATS)
 - [ ] Reading order of the extracted text matches the visual order (single-column stock template is safe; multi-column custom templates are where this breaks)
 - [ ] Posting keywords covered or honestly absent - synonym-only matches tightened to the posting's exact term where truthfully applicable, keywords the profile genuinely supports added to experience bullets, genuine gaps left visible and **never stuffed**
+
+@AGENTS.md

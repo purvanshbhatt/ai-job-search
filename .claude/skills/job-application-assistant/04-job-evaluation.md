@@ -30,6 +30,18 @@ If the candidate's permit also constrains *hours* or *start date* (a student vis
 
 A role that fails this gate is not scored and not drafted. Everything below applies only to roles that pass it.
 
+### Candidate-specific eligibility (Purvansh Bhatt)
+- **US:** F-1 **STEM OPT valid through July 2027**. Will answer **"yes"** to "will you now or in the future require sponsorship?".
+  - FAIL: citizenship / green card / security clearance / "must be authorized to work without sponsorship now or in the future" / "we do not sponsor visas".
+  - FLAG: employer not enrolled in E-Verify (STEM OPT requires it) - check before applying.
+  - PASS: "we sponsor H-1B", "OPT/CPT welcome", or a known H-1B sponsor (check h1bdata / MyVisaJobs).
+- **Outside the US** (Canada, UK, EU, Singapore, Japan, UAE, Qatar, Australia, NZ): needs an employer-sponsored work visa.
+  - FAIL: "must have existing right to work in <country>", "no visa sponsorship", citizenship or local clearance (e.g. UK SC/DV, NATO).
+  - PASS: "visa sponsorship available", "relocation support", or employer on the country's sponsor register (UK Home Office register, NL IND recognised sponsors).
+  - Gulf (UAE/Qatar): employers normally sponsor the residence visa; treat as PASS unless the posting says nationals only ("Emiratisation", "Qatarisation").
+  - Germany/EU: EU Blue Card is realistic with an MS + salary above the Blue Card threshold - treat silence as PROCEED, unverified.
+- **Start-date note:** can relocate within 2-3 weeks, but visa processing outside the US adds time - mention this when a posting demands an immediate start.
+
 ## Language Gate — run before scoring
 
 This gate checks a posting's language requirements against what the candidate actually speaks. It is not one of the five Scoring Dimensions below - it runs before them, structured the same way as the Eligibility Gate above: read the posting, classify against profile data, and treat a hard mismatch as FAIL before scoring. Its verdict is tracked downstream: `/rank` records the result as `language_gate` (PASS/FAIL/FLAG) with a supporting `language_note`, persists both into `seen_jobs.json`, and treats a FAIL as a shortlist veto; `/scrape` surfaces the flag in its results table and carries a language-override rule for postings whose ad language differs from the role's working language. `/apply`'s language detection (Step 1, which extracts a posting's required language generically) feeds this same check.
@@ -60,9 +72,9 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** detection engineering (SIEM correlation rules, log analytics, anomaly detection), incident response, AWS cloud security (IAM, WAF, S3, CloudTrail), AI/LLM security testing (Garak, PyRIT, Promptfoo, MITRE ATLAS, OWASP LLM Top 10), Python + SQL security automation, MITRE ATT&CK
+**Moderate match areas:** penetration testing / vulnerability assessment, DFIR, GRC & quantitative risk (NIST CSF 2.0, ISO 27001, SOC 2, NIST AI RMF, FAIR), CrowdStrike Falcon EDR, Azure, GCP, FastAPI, firewalls / network security
+**Weak match areas:** Kubernetes / container security at depth, Terraform / IaC security, Go / Rust / Java, malware reverse engineering, large-enterprise SIEM administration (Splunk/Sentinel ⚠ unconfirmed), OT/ICS security, people management
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for? Match on the function and nature of the work performed, not the literal job title - a "Data Consultant" and a "Data Scientist" role can be functionally identical.
@@ -74,9 +86,11 @@ Does work history align with what they're looking for? Match on the function and
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Strong:** Security Engineer, Detection & Response / Detection Engineer, Cloud Security Engineer (AWS), AI / LLM Security Engineer, SOC / Security Analyst, Incident Responder - at entry-to-mid level (roughly 2-5 years required)
+**Moderate:** Application / Product Security, Penetration Tester, DFIR Analyst, GRC / Risk / Compliance Analyst, Security Automation Engineer, AI red teamer
+**Entry-level:** Senior/Staff/Principal titles requiring 6+ years, security management (Manager/Head/Director), security architecture, OT/ICS
+
+Seniority rule: 3+ years total experience. "Senior" titles at startups that ask for 4-5 years are a stretch (score Experience 50-65); 7+ years or people management is a weak fit.
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -91,10 +105,11 @@ Does the role and company culture match the behavioral profile?
 **Red flags to research:** Department disorganization, work dominated by maintenance over development, poor chemistry with leadership, culture mismatches. Check reviews, media coverage, LinkedIn connections, and network contacts for insider perspective.
 
 ### 4. Location & Logistics (Pass/Fail + Notes)
-- Within commute range: PASS
-- Remote with occasional office: PASS
-- Requires relocation: FAIL (deal-breaker)
-- Frequent international travel: FLAG (discuss with user)
+Purvansh is open to relocation within 2-3 weeks to any target region.
+- NY/NJ metro, or remote / hybrid: PASS
+- Relocation within the US, Canada, UK, Europe, Singapore, Japan, UAE, Qatar, Australia, New Zealand: PASS (eligibility handled by the Eligibility Gate above)
+- Any other country: FLAG (ask user)
+- Frequent international travel: PASS (note it)
 
 ### 5. Career Alignment & Motivation (0-100)
 Does this role advance career goals and contain tasks that energize?
@@ -107,19 +122,19 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+- Land a full-time security engineering role with real building scope (detection, cloud, or AI security)
+- Grow toward AI security / AI red teaming specialization
+- Secure long-term work authorization (H-1B sponsorship in the US, or a sponsored work visa abroad)
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
-- Non-task factors: leadership style, department culture, company values, degree of autonomy
+- Tasks that energize: building detections and automation, AI/LLM security testing, cloud hardening, shipping security tooling
+- Tasks that drain: pure L1 alert-queue monitoring, audit paperwork with no engineering
+- Non-task factors: leadership style, department culture, company values, degree of autonomy - startups preferred
 
 **Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+- **Security**: STEM OPT ends July 2027 - visa sponsorship strongly preferred; prioritize employers that sponsor
+- **Flexibility**: can relocate within 2-3 weeks; remote/hybrid welcome
+- **Professional development**: OSCP in progress; AI security specialization
 
 ### 6. Salary Benchmark (Optional)
 

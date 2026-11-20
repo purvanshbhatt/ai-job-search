@@ -4,51 +4,49 @@ framework_version: 1.0.0
 
 # Behavioral Profile
 
-<!-- SETUP: This file is populated by running /setup -->
-<!-- You can use results from PI, DISC, Myers-Briggs, StrengthsFinder, or a self-assessment -->
+*[Inferred from resume summaries and project history - no formal assessment (PI, DISC, etc.) on file. Review before relying on this.]*
 
 ## Overview
-[YOUR_NAME]'s behavioral assessment identifies them as a **[PROFILE_TYPE]** pattern. [1-2 SENTENCE_SUMMARY].
+Purvansh Bhatt presents as a **builder-operator**: hands-on, automation-first, and comfortable owning a problem end to end, from founding ResilAI to shipping open-source security tooling. Stated preference for startup environments.
 
 ## Core Behavioral Drives
 
 | Drive | Level | Meaning |
 |-------|-------|---------|
-| [DRIVE_1] | [LEVEL] | [DESCRIPTION] |
-| [DRIVE_2] | [LEVEL] | [DESCRIPTION] |
-| [DRIVE_3] | [LEVEL] | [DESCRIPTION] |
-| [DRIVE_4] | [LEVEL] | [DESCRIPTION] |
+| Ownership / autonomy | High (inferred) | Founded a startup; maintains several self-directed open-source projects |
+| Automation / efficiency | High (inferred) | Repeatedly replaces manual triage and testing with Python/SQL tooling (40% triage reduction, 90% faster assessments) |
+| Collaboration / communication | Moderate-high (inferred) | Led an 8-person eCTF team; writes executive/risk reports for non-technical stakeholders |
+| Structure / process | Moderate (inferred) | Comfortable with frameworks (NIST, ISO, MITRE), but gravitates to building over administering |
 
 ## Strongest Behaviors
-- **[BEHAVIOR_1]:** [DESCRIPTION]
-- **[BEHAVIOR_2]:** [DESCRIPTION]
-- **[BEHAVIOR_3]:** [DESCRIPTION]
+- **Builds instead of waiting:** turns recurring problems into tools (Logic Firewall, patchproof, cloud-forensic-snapshot)
+- **Measures outcomes:** frames work in MTTD/MTTR, block rates, attack-surface reduction
+- **Translates risk:** converts technical findings into plain-language narratives for business stakeholders
 
 ## How You Work Best
-- [ENVIRONMENT_PREFERENCE_1]
-- [ENVIRONMENT_PREFERENCE_2]
-- [ENVIRONMENT_PREFERENCE_3]
+- Startup or small, fast-moving security teams with real ownership
+- Roles mixing engineering (building detections, automation) with response work
+- Work touching AI/LLM security, where the field is new and building is expected
 
 ## Growth Areas (frame positively in applications)
-- **[AREA_1]:** [HOW_TO_FRAME_IT_POSITIVELY]
-- **[AREA_2]:** [HOW_TO_FRAME_IT_POSITIVELY]
+- **Tenure in large enterprises:** experience is mostly startups and small firms - frame as breadth and ownership across the whole security stack
+- **Senior-title experience:** 3+ years total - frame as rapid scope growth (intern to engineer to founder)
 
 ## Mapping to Job Posting Language
 
 When a job posting mentions these keywords, it's a **strong behavioral fit**:
-- [KEYWORD_OR_PHRASE_THAT_MATCHES_YOUR_STYLE]
-- [ANOTHER_KEYWORD]
+- "founding / first security hire", "build from scratch", "0 to 1", "ownership", "wear many hats"
+- "automate", "detection-as-code", "security engineering", "AI security", "red team"
 
 When a job posting mentions these, flag as **potential friction** (not deal-breaker):
-- [KEYWORD_OR_PHRASE_THAT_MIGHT_CLASH]
-- [ANOTHER_KEYWORD]
+- Pure ticket-queue / L1 monitoring with no engineering scope
+- Heavy process / audit-only roles with no hands-on building
 
 ## Management Style Preferences
-- [WHAT_MANAGEMENT_STYLE_WORKS_FOR_YOU]
-- [WHAT_DOESN'T_WORK]
+- Not yet recorded - likely autonomy with clear goals (inferred from founder/open-source history)
 
 ## Using This in Applications
-- **Cover letters:** [HOW_TO_WEAVE_IN_BEHAVIORAL_STRENGTHS]
-- **CV:** [WHAT_TO_EMPHASIZE]
-- **Interviews:** [WHAT_STAR_EXAMPLES_TO_USE]
-- **Don't overstate:** [WHAT_NOT_TO_CLAIM]
+- **Cover letters:** lead with something built and measured (ResilAI 99.2% block rate, 30% MTTD/MTTR cut)
+- **CV:** emphasize automation outcomes and the AI-security differentiator
+- **Interviews:** STAR stories from ResilAI, Filmy AI detection work, eCTF team lead
+- **Don't overstate:** no "Security Lead" title, no unconfirmed tools (see ⚠ items in 01-candidate-profile.md)

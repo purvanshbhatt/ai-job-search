@@ -39,6 +39,70 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 
 <!-- Add more STAR examples as needed. Aim for 4-6 covering different competencies. -->
 
+## STAR Candidates (Complete Manually)
+
+Extracted by /setup Path A from the resumes in `documents/cv/`. Fill in S/T/A/R before using in interviews.
+
+### ResilAI Logic Firewall - 99.2% block rate
+**Source:** CV - ResilAI (Founder & Security Engineer)
+**What happened:** Built a deterministic pre-inference filter on GCP Cloud Run that blocks 99.2% of 500+ adversarial payloads (MITRE ATLAS AML.T0031).
+**Why it matters:** "Tell me about something you built", AI security depth, ownership, "why did you start a company?"
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### Filmy AI - 30% faster MTTD/MTTR
+**Source:** CV - Filmy AI (Cybersecurity Engineer)
+**What happened:** Engineered SIEM correlation rules, log analytics and anomaly-detection dashboards across 50+ events/incidents.
+**Why it matters:** detection engineering, incident response, "walk me through an incident", measurable impact
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### Filmy AI - 40% AWS attack-surface reduction
+**Source:** CV - Filmy AI
+**What happened:** Enforced least-privilege IAM, automated S3 encryption and WAF protections, with CloudTrail coverage.
+**Why it matters:** cloud security, prioritization, influencing engineers to accept security changes
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### Filmy AI - 40% less manual triage
+**Source:** CV - Filmy AI
+**What happened:** Python + SQL automation for log extraction, event parsing and threat-intel reporting.
+**Why it matters:** automation mindset, efficiency, "how do you handle alert fatigue?"
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### MITRE eCTF 2024 - led a team of eight
+**Source:** CV - Competitions
+**What happened:** Led an 8-person team building a secure microcontroller system (1 s wake, 216 KB firmware); 7 vulnerabilities mitigated, 25% performance gain.
+**Why it matters:** leadership, working under constraints, teamwork / conflict questions
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### NextGen Risk Register - quantitative GRC
+**Source:** CV - Projects
+**What happened:** Built an open-source FAIR-style risk register mapped to NIST CSF 2.0, ISO 27001, SOC 2, NIST AI RMF; 69 automated tests.
+**Why it matters:** GRC roles, risk communication, "how do you prioritize risks?"
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
 ## Common Tough Questions
 
 ### "Why did you leave [previous company]?"

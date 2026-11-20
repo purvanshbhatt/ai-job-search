@@ -1,0 +1,102 @@
+{
+  "generatedAt": "2026-11-04T03:15:47.429Z",
+  "projectId": "purvanshbhatt-ai-job-search",
+  "nodes": [
+    {
+      "id": "session:claude-code:17785521-8b14-4c89-abb4-dbe7fee97a3f",
+      "type": "session",
+      "label": "<command-message>setup</command-message> <command-name>/setup</command-name>",
+      "weight": 6,
+      "meta": {
+        "ide": "claude-code",
+        "updatedAt": "2026-11-04T03:15:39.970Z"
+      }
+    },
+    {
+      "id": "file:documents/README.md",
+      "type": "file",
+      "label": "documents/README.md",
+      "weight": 2
+    },
+    {
+      "id": "file:s://github.com",
+      "type": "file",
+      "label": "s://github.com",
+      "weight": 1
+    },
+    {
+      "id": "topic:command-message",
+      "type": "topic",
+      "label": "command-message",
+      "weight": 1
+    },
+    {
+      "id": "topic:setup",
+      "type": "topic",
+      "label": "setup",
+      "weight": 1
+    },
+    {
+      "id": "topic:command-name",
+      "type": "topic",
+      "label": "command-name",
+      "weight": 1
+    },
+    {
+      "id": "topic:keep",
+      "type": "topic",
+      "label": "keep",
+      "weight": 1
+    },
+    {
+      "id": "topic:local",
+      "type": "topic",
+      "label": "local",
+      "weight": 1
+    }
+  ],
+  "edges": [
+    {
+      "source": "session:claude-code:17785521-8b14-4c89-abb4-dbe7fee97a3f",
+      "target": "file:documents/README.md",
+      "relation": "touched",
+      "weight": 2
+    },
+    {
+      "source": "session:claude-code:17785521-8b14-4c89-abb4-dbe7fee97a3f",
+      "target": "file:s://github.com",
+      "relation": "touched",
+      "weight": 1
+    },
+    {
+      "source": "session:claude-code:17785521-8b14-4c89-abb4-dbe7fee97a3f",
+      "target": "topic:command-message",
+      "relation": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "session:claude-code:17785521-8b14-4c89-abb4-dbe7fee97a3f",
+      "target": "topic:setup",
+      "relation": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "session:claude-code:17785521-8b14-4c89-abb4-dbe7fee97a3f",
+      "target": "topic:command-name",
+      "relation": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "session:claude-code:17785521-8b14-4c89-abb4-dbe7fee97a3f",
+      "target": "topic:keep",
+      "relation": "discusses",
+      "weight": 1
+    },
+    {
+      "source": "session:claude-code:17785521-8b14-4c89-abb4-dbe7fee97a3f",
+      "target": "topic:local",
+      "relation": "discusses",
+      "weight": 1
+    }
+  ]
+}

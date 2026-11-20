@@ -129,12 +129,19 @@ When the role sits outside your home domain, **lead with the domain-transfer arg
 
 **Create 2-3 profile statement templates for your main role types:**
 
-<!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+(Plain-text templates - escape `%` and `&` when pasting into LaTeX.)
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For Security Engineer / Detection & Response / Cloud Security roles:**
+> Security engineer with an MS in Cybersecurity and 3+ years across detection engineering, incident response and cloud security. At Filmy AI, cut detection-to-containment time (MTTD/MTTR) by 30% by engineering SIEM correlation rules and anomaly-detection dashboards, reduced analyst triage load by 40% with Python and SQL automation, and shrank the AWS attack surface by 40% through least-privilege IAM, WAF and S3 hardening. CompTIA CySA+ and Security+ certified; OSCP in progress.
+
+**For AI Security / LLM Security / AI Red Team roles:**
+> Security engineer specializing in AI and LLM security. Founded ResilAI, an AI incident readiness platform whose deterministic pre-inference filter blocks 99.2% of 500+ adversarial payloads (MITRE ATLAS), and built an adversarial evaluation harness on Garak, Microsoft PyRIT and Promptfoo covering prompt injection, jailbreaks and SSRF. Brings a detection-and-response background (30% faster MTTD/MTTR at Filmy AI) to securing AI systems in production.
+
+**For SOC / Security Analyst / Incident Response roles:**
+> Cybersecurity analyst with an MS in Cybersecurity and 3+ years in security monitoring, incident response and digital forensics. Builds the SIEM correlation rules and Python/SQL triage automation that cut MTTD/MTTR by 30% and manual triage by 40% at Filmy AI. Works fluently with MITRE ATT&CK, log correlation across Windows and Linux, and AWS cloud investigations. CompTIA CySA+ and Security+ certified.
+
+**For GRC / Risk / Security Compliance roles:**
+> Security professional with an MS in Cybersecurity who pairs hands-on engineering with quantitative risk. Built NextGen Risk Register, an open-source GRC platform combining 5x5 scoring with FAIR-style Monte Carlo loss modeling, with controls mapped to NIST CSF 2.0, ISO 27001:2022, SOC 2 and NIST AI RMF. Translates technical findings into board-ready risk narratives; CySA+ and Security+ certified.
 
 Statements labeled *[Used for: <company>_<role>]* were extracted from archived application drafts by `/setup` Path A. They are **phrasing references, never fact sources**: when drafting from one, every factual claim still comes from `01-candidate-profile.md` - a past tailored draft does not vouch for its own accuracy.
 
